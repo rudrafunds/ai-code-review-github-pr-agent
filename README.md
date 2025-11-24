@@ -46,8 +46,9 @@ Claude 3.5 Sonnet (2024-10-22) – 200k context, best-in-class code reasoning, l
 - Hallucination guard: model must quote exact line numbers  
 - Cost caps via environment variables  
 - Secrets in `.env`
+  
 **Monitoring**  
-- Console logs + optional LangSmith tracing (free tier)  
+- Console logs + optional LangSmith tracing
 - Token usage printed per run
 
 **Deployment Plan**
@@ -56,3 +57,4 @@ uvicorn main:app --reload
 # Then trigger any PR instantly:
 
 curl "http://localhost:8000/analyze?repo=owner/repo&pr=123"
+
