@@ -45,13 +45,14 @@ Claude 3.5 Sonnet (2024-10-22) – 200k context, best-in-class code reasoning, l
 - Human-in-the-loop ready (can switch to draft reviews)  
 - Hallucination guard: model must quote exact line numbers  
 - Cost caps via environment variables  
-- Secrets in `.env` 
+- Secrets in `.env`
 **Monitoring**  
 - Console logs + optional LangSmith tracing (free tier)  
 - Token usage printed per run
 
-**Deployment Plan (interview demo)**
+**Deployment Plan**
 ```bash
 uvicorn main:app --reload
 # Then trigger any PR instantly:
+
 curl "http://localhost:8000/analyze?repo=owner/repo&pr=123"
