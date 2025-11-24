@@ -38,7 +38,7 @@ Claude 3.5 Sonnet (2024-10-22) – 200k context, best-in-class code reasoning, l
 - FastAPI + Uvicorn (local)  
 - LangGraph + LangChain community  
 - PyGithub for real GitHub interaction  
-- Claude via Anthropic API (~$0.04 per full review)  
+- Claude via Anthropic API
 - Optional: OpenAI GPT-4o or Groq Llama3 as drop-in replacement
 
 **Risk Controls & Safety**
@@ -57,4 +57,5 @@ uvicorn main:app --reload
 # Then trigger any PR instantly:
 
 curl "http://localhost:8000/analyze?repo=owner/repo&pr=123"
+
 
