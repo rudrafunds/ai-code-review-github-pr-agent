@@ -9,7 +9,7 @@ A GitHub App that instantly:
 • Posts high-quality, line-specific review comments
 • Detects first-time contributors and auto-generates personalized onboarding guides
 
-**Success Metrics (Demo will prove)**
+**Success Metrics**
 - <20 second end-to-end review
 - ≥85% of comments rated “useful” or better by senior engineers
 - Onboarding summary contains zero hallucinations (verified live)
@@ -57,5 +57,6 @@ uvicorn main:app --reload
 # Then trigger any PR instantly:
 
 curl "http://localhost:8000/analyze?repo=owner/repo&pr=123"
+
 
 
